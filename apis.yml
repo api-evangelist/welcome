@@ -1,8 +1,22 @@
 aid: welcome
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/welcome.png
 name: Welcome
-description: 'Welcome is a company surfaced as a portfolio company of accel, techstars and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Welcome (welco.me) was an AI-powered travel planning product (TripNotes) surfaced
+  as a portfolio company of accel, techstars. As of this enrichment pass welco.me 301-redirects
+  to dorsia.com/newsroom/welcome-tripnotes, indicating the standalone product was acquired by /
+  folded into Dorsia; no independent public API, developer portal, documentation, or well-known
+  surface remains. Sector: ai. Retained as a network record with a live domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/welcome/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +25,17 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-detail: 'welco.me 301-redirects to https://www.dorsia.com/newsroom/welcome-tripnotes (target 404); no standalone API surface.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Travel
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/welcome-domain-security.yml
 - type: Website
   url: https://welco.me/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
