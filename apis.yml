@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://welco.me/', status: 301, note: 'declared website redirects to https://www.dorsia.com:443/newsroom/welcome-tripnotes — a different registrable domain (welco.me -> dorsia.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/welcome.png
 name: Welcome
 description: 'Welcome (welco.me) was an AI-powered travel planning product (TripNotes) surfaced
