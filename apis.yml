@@ -18,18 +18,21 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://welco.me/
+    status: 301
+    note: declared website redirects to https://www.dorsia.com:443/newsroom/welcome-tripnotes — a different
+      registrable domain (welco.me -> dorsia.com), possible rename or acquisition (probed 2026-09-03,
+      roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://welco.me/', status: 301, note: 'declared website redirects to https://www.dorsia.com:443/newsroom/welcome-tripnotes — a different registrable domain (welco.me -> dorsia.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/welcome.png
 name: Welcome
-description: 'Welcome (welco.me) was an AI-powered travel planning product (TripNotes) surfaced
-  as a portfolio company of accel, techstars. As of this enrichment pass welco.me 301-redirects
-  to dorsia.com/newsroom/welcome-tripnotes, indicating the standalone product was acquired by /
-  folded into Dorsia; no independent public API, developer portal, documentation, or well-known
-  surface remains. Sector: ai. Retained as a network record with a live domain-security probe.'
+description: 'Welcome (welco.me) was an AI-powered travel planning product (TripNotes) surfaced as a portfolio
+  company of accel, techstars. As of this enrichment pass welco.me 301-redirects to dorsia.com/newsroom/welcome-tripnotes,
+  indicating the standalone product was acquired by / folded into Dorsia; no independent public API, developer
+  portal, documentation, or well-known surface remains. Sector: ai. Retained as a network record with
+  a live domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/welcome/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -38,11 +41,12 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-status: acquired
-x-status-detail: 'welco.me 301-redirects to https://www.dorsia.com/newsroom/welcome-tripnotes (target 404); no standalone API surface.'
+x-status: defunct
+x-status-detail: welco.me 301-redirects to https://www.dorsia.com/newsroom/welcome-tripnotes (target 404);
+  no standalone API surface.
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-15'
 tags:
 - Company
 - Artificial Intelligence
